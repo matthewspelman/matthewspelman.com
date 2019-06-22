@@ -9,6 +9,11 @@ body {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	padding: 10px;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
 }
 
 .firstimage, .headshot {
