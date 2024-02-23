@@ -12,17 +12,17 @@ body {
 	padding: 10px;
 }
 
-a:-webkit-any-link {
+a {
 	text-decoration: none;
 }
 
 .firstimage, .headshot {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
-@media handheld, only screen and (max-width: 767px) {
-  body {
-  	text-align: center;
-  }
+@media only screen and (max-width: 767px) {
+	body {
+		text-align: center;
+	}
 }
