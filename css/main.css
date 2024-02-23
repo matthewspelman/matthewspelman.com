@@ -1,9 +1,11 @@
 body {
-	font-family: 'Noto Serif JP', sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
 	text-align: center;
 	padding: 5px;
+	line-height: 1.6; /* Adjust as needed for better readability */
 }
 
+/* Your existing styles below... */
 .material-icons {
 	display: block;
 	text-align: center;
