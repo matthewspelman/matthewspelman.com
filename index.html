@@ -21,40 +21,42 @@
     </header>
     
     <main>
-        <section>
+        <section class="hero">
             <img class="firstimage" src="img/pexels-photo-220824.jpeg" alt="Scenic View">
             <h2>I want to build things.</h2>
         </section>
 
         <!-- CONTACT -->
-        <section>
+        <section class="contact">
             <img class="headshot" src="img/headshot.jpg" width="400" height="240" alt="Matthew Spelman's Headshot">
             <h2 id="contact" data-scroll-id="contact-us" tabindex="-1" style="outline: none;">Contact Me</h2>
-            <a href="mailto:matthewspelman@gmail.com?subject=Pleasure%20to%20meet%20you&amp;body=Hi%20Matt," rel="noopener noreferrer" target="_blank">
-                <i class="material-icons">mail_outline</i>
-            </a>  
-            <a href="https://github.com/matthewspelman" rel="noopener noreferrer" target="_blank">
-                <i class="material-icons">code</i>
-            </a>      
+            <div class="contact-links">
+                <a href="mailto:matthewspelman@gmail.com?subject=Pleasure%20to%20meet%20you&amp;body=Hi%20Matt," rel="noopener noreferrer" target="_blank">
+                    <i class="material-icons">mail_outline</i>
+                </a>  
+                <a href="https://github.com/matthewspelman" rel="noopener noreferrer" target="_blank">
+                    <i class="material-icons">code</i>
+                </a>      
+            </div>
         </section>
     </main>
 
     <footer>
         <small>© 2019 matthewspelman.com. Made in NYC. We respect your privacy and will not share your information.</small>
         <!-- Return to Top -->
-        <a href="#" id="return-to-top" style="display: inline;">
-            <i class="icon-chevron-up"></i>
+        <a href="#" id="return-to-top">
+            <i class="material-icons">arrow_upward</i>
         </a>
     </footer>
 
     <!-- Javascript sources -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/main.js" defer></script>
 
     <!--Google Analytics Javascript-->
     <script>
