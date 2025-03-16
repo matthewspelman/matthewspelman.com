@@ -1,32 +1,55 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import Image from 'next/image'
 
 export default function AnimatedHero() {
-  const [isLoading, setIsLoading] = useState(true)
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
-      className="max-w-4xl mx-auto text-center"
-    >
-      <h2 className="text-5xl md:text-7xl font-bold hero-gradient mb-8">
-        I want to build things.
-      </h2>
-      <div className="w-full mb-12 overflow-hidden rounded-lg shadow-2xl relative">
-        {isLoading && (
-          <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse" />
-        )}
-        <img
-          src="/img/pexels-photo-220824.jpeg"
-          alt="Scenic View"
-          className={`w-full h-auto object-cover transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-          onLoad={() => setIsLoading(false)}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="space-y-6"
+      >
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+          Hi, I'm Matthew Spelman
+        </h1>
+        <p className="text-xl text-gray-600 dark:text-gray-300">
+          I'm a software engineer based in New York City, specializing in building exceptional digital experiences.
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="#contact"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="https://github.com/matthewspelman"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="relative aspect-square rounded-2xl overflow-hidden"
+      >
+        <Image
+          src="/profile.jpg"
+          alt="Matthew Spelman"
+          fill
+          className="object-cover"
+          priority
         />
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 } 
