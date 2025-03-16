@@ -12,13 +12,13 @@ export default function Contact() {
       viewport={{ once: true }}
       className="max-w-3xl mx-auto text-center"
     >
-      <div className="mb-8">
+      <div className="relative w-48 h-48 mx-auto mb-8">
         <Image
           src="/img/headshot.jpg"
           alt="Matthew Spelman's Headshot"
-          width={400}
-          height={240}
-          className="rounded-full mx-auto shadow-xl"
+          fill
+          className="rounded-full shadow-xl object-cover"
+          sizes="(max-width: 768px) 192px, 192px"
         />
       </div>
       <h2 className="text-4xl font-bold mb-8">Contact Me</h2>
@@ -30,6 +30,7 @@ export default function Contact() {
           className="p-4 rounded-full bg-white dark:bg-gray-700 shadow-lg hover:shadow-xl transition-all"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Email Matthew Spelman"
         >
           <EnvelopeIcon className="w-6 h-6" />
         </motion.a>
@@ -40,6 +41,7 @@ export default function Contact() {
           className="p-4 rounded-full bg-white dark:bg-gray-700 shadow-lg hover:shadow-xl transition-all"
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="Visit Matthew Spelman's GitHub"
         >
           <CodeBracketIcon className="w-6 h-6" />
         </motion.a>

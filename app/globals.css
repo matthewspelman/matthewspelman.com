@@ -12,6 +12,10 @@
     --background: 222.2 84% 4.9%;
     --foreground: 0 0% 100%;
   }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+  }
 }
 
 @layer utilities {
@@ -21,5 +25,27 @@
 }
 
 .hero-gradient {
-  @apply bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
 } 
