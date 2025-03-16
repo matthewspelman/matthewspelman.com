@@ -8,7 +8,23 @@ export const metadata: Metadata = {
   title: 'Matthew Spelman',
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#ffffff',
+  manifest: '/site.webmanifest',
+  openGraph: {
+    title: 'Matthew Spelman',
+    description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Matthew Spelman',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Matthew Spelman',
+    description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   },
 }
 
@@ -19,11 +35,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-white antialiased`}>
         {children}
       </body>

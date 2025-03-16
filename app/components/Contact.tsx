@@ -12,13 +12,14 @@ export default function Contact() {
       viewport={{ once: true }}
       className="max-w-3xl mx-auto text-center"
     >
-      <div className="relative w-48 h-48 mx-auto mb-8">
+      <div className="relative w-48 h-48 mx-auto mb-8 overflow-hidden rounded-full shadow-xl">
         <Image
           src="/img/headshot.jpg"
           alt="Matthew Spelman's Headshot"
           fill
-          className="rounded-full shadow-xl object-cover"
+          className="object-cover"
           sizes="(max-width: 768px) 192px, 192px"
+          quality={90}
         />
       </div>
       <h2 className="text-4xl font-bold mb-8">Contact Me</h2>

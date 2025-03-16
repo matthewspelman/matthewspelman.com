@@ -14,14 +14,15 @@ export default function AnimatedHero() {
       <h2 className="text-5xl md:text-7xl font-bold hero-gradient mb-8">
         I want to build things.
       </h2>
-      <div className="relative w-full aspect-video mb-12">
+      <div className="relative w-full aspect-video mb-12 overflow-hidden rounded-lg shadow-2xl">
         <Image
           src="/img/pexels-photo-220824.jpeg"
           alt="Scenic View"
           fill
-          className="rounded-lg shadow-2xl object-cover"
+          className="object-cover"
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          quality={90}
         />
       </div>
     </motion.div>
