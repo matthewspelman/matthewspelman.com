@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './styles/globals.css'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icons/favicon.ico', sizes: 'any' },
+      { url: '/icons/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/icons/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
   manifest: '/site.webmanifest',
