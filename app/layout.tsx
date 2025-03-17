@@ -12,12 +12,19 @@ export const metadata: Metadata = {
   title: 'Matthew Spelman',
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
+  manifest: '/site.webmanifest',
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#ffffff',
-  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Matthew Spelman',
     description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
