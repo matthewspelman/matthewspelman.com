@@ -21,6 +21,7 @@
   "homepage": "https://github.com/matthewspelman/matthewspelman.com#readme",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@vercel/analytics": "^1.5.0",
     "autoprefixer": "^10.4.18",
     "framer-motion": "^11.0.8",
     "next": "^13.5.6",
