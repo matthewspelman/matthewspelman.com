@@ -1,5 +1,6 @@
 import AnimatedHeader from './components/AnimatedHeader'
 import AnimatedHero from './components/AnimatedHero'
+import About from './components/About'
 import Contact from './components/Contact'
 
 export default function Home() {
@@ -14,6 +15,10 @@ export default function Home() {
       <main className="flex-grow">
         <section className="min-h-screen flex items-center justify-center pt-16">
           <AnimatedHero />
+        </section>
+
+        <section id="about" className="min-h-screen flex items-center justify-center">
+          <About />
         </section>
 
         <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-800/50">
