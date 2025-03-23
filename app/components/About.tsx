@@ -37,13 +37,10 @@ export default function About() {
             
             <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                With extensive experience in Technology Product, Program, and Project Management, I bring a comprehensive approach to delivering successful digital solutions. My background enables me to bridge the gap between technical implementation and business objectives, ensuring projects are delivered on time, within scope, and with exceptional quality.
+                With extensive experience in technology product, program, and project management, as well as software engineering, I deliver innovative digital solutions that seamlessly connect technical execution with strategic business objectives. Based in New York City, my expertise encompasses full-stack development, enabling me to build scalable, impactful applications designed to enhance user experiences and drive meaningful results.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                As a software engineer based in New York City, I specialize in building exceptional digital experiences. With a strong foundation in full-stack development and a passion for creating innovative solutions, I focus on developing scalable applications that make a difference.
-              </p>
-              <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                I am knowledgeable in modern AI technologies and techniques, which includes Large Language Models (LLMs) and various AI-driven developer technologies. My expertise in AI allows me to create cutting-edge solutions that leverage the latest advancements in artificial intelligence.
+                My proficiency in modern artificial intelligence technologies—including Large Language Models (LLMs) and AI-driven development frameworks—positions me uniquely to create cutting-edge digital experiences. By leveraging the latest advancements in AI, I help businesses implement transformative solutions that are delivered efficiently, on scope, and with outstanding quality.
               </p>
             </div>
           </motion.div>
