@@ -18,6 +18,13 @@ function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
+  // Add useEffect to check reCAPTCHA initialization
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !window.grecaptcha) {
+      console.log('reCAPTCHA not found in window object');
+    }
+  }, []);
+
   // Clear URL parameters on component mount
   useEffect(() => {
     if (searchParams.toString()) {
@@ -215,10 +222,13 @@ export default function Contact() {
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
       scriptProps={{
-        async: true,
-        defer: true,
-        appendTo: 'body',
+        async: false,
+        defer: false,
+        appendTo: 'head',
         nonce: undefined,
+        onLoad: () => {
+          console.log('reCAPTCHA script loaded');
+        },
       }}
     >
       <ContactForm />
