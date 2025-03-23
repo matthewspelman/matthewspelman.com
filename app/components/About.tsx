@@ -27,23 +27,23 @@ export default function About() {
             className="space-y-12"
           >
             <div className="space-y-2">
-              <h1 className="text-3xl md:text-4xl font-light tracking-tight text-black dark:text-white">
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-black dark:text-white">
                 About
               </h1>
-              <h2 className="text-2xl md:text-3xl font-medium text-gray-800 dark:text-gray-200">
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
                 Matthew Spelman
               </h2>
             </div>
             
             <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a software engineer based in New York City, specializing in building exceptional digital experiences. With a strong foundation in full-stack development and a passion for creating innovative solutions, I focus on developing scalable applications that make a difference.
+                With extensive experience in Technology Product, Program, and Project Management, I bring a comprehensive approach to delivering successful digital solutions. My background enables me to bridge the gap between technical implementation and business objectives, ensuring projects are delivered on time, within scope, and with exceptional quality.
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+                As a software engineer based in New York City, I specialize in building exceptional digital experiences. With a strong foundation in full-stack development and a passion for creating innovative solutions, I focus on developing scalable applications that make a difference.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                 I am knowledgeable in modern AI technologies and techniques, which includes Large Language Models (LLMs) and various AI-driven developer technologies. My expertise in AI allows me to create cutting-edge solutions that leverage the latest advancements in artificial intelligence.
-              </p>
-              <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                With extensive experience in Technology Product, Program, and Project Management, I bring a comprehensive approach to delivering successful digital solutions. My background enables me to bridge the gap between technical implementation and business objectives, ensuring projects are delivered on time, within scope, and with exceptional quality.
               </p>
             </div>
           </motion.div>
