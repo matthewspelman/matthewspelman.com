@@ -1,11 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CodeBracketIcon, EnvelopeIcon, LinkedinIcon } from '@heroicons/react/24/outline'
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 function ContactForm() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const { executeRecaptcha } = useGoogleReCaptcha()
   const [formData, setFormData] = useState({
     name: '',
@@ -14,6 +17,13 @@ function ContactForm() {
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
+
+  // Clear URL parameters on component mount
+  useEffect(() => {
+    if (searchParams.toString()) {
+      router.replace('/#contact', { scroll: false })
+    }
+  }, [router, searchParams])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -45,6 +55,8 @@ function ContactForm() {
 
       setStatus('success')
       setFormData({ name: '', email: '', message: '' })
+      // Clear URL parameters after successful submission
+      router.replace('/#contact', { scroll: false })
     } catch (error) {
       setStatus('error')
       setErrorMessage(error instanceof Error ? error.message : 'Failed to send message')
