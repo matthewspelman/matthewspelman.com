@@ -1,6 +1,5 @@
 import AnimatedHeader from './components/AnimatedHeader'
 import AnimatedHero from './components/AnimatedHero'
-import Projects from './components/Projects'
 import Contact from './components/Contact'
 
 export default function Home() {
@@ -16,12 +15,6 @@ export default function Home() {
         <section className="min-h-screen flex items-center justify-center pt-16">
           <div className="container">
             <AnimatedHero />
-          </div>
-        </section>
-
-        <section id="projects" className="py-24">
-          <div className="container">
-            <Projects />
           </div>
         </section>
 
