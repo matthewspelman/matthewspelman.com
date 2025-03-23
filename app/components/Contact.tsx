@@ -6,6 +6,16 @@ import { CodeBracketIcon } from '@heroicons/react/24/outline'
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import { useRouter, useSearchParams } from 'next/navigation'
 
+// Add type declaration for window.grecaptcha
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
+}
+
 function ContactForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -17,12 +27,27 @@ function ContactForm() {
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const [recaptchaReady, setRecaptchaReady] = useState(false)
 
-  // Add useEffect to check reCAPTCHA initialization
+  // Check reCAPTCHA initialization
   useEffect(() => {
-    if (typeof window !== 'undefined' && !window.grecaptcha) {
-      console.log('reCAPTCHA not found in window object');
-    }
+    const checkRecaptcha = () => {
+      if (typeof window !== 'undefined' && window.grecaptcha) {
+        setRecaptchaReady(true);
+        console.log('reCAPTCHA is ready');
+      } else {
+        console.log('reCAPTCHA not found in window object');
+      }
+    };
+
+    // Initial check
+    checkRecaptcha();
+
+    // Set up an interval to check periodically
+    const interval = setInterval(checkRecaptcha, 1000);
+
+    // Cleanup
+    return () => clearInterval(interval);
   }, []);
 
   // Clear URL parameters on component mount
@@ -36,6 +61,12 @@ function ContactForm() {
     e.preventDefault()
     setStatus('loading')
     setErrorMessage('')
+
+    if (!recaptchaReady) {
+      setStatus('error')
+      setErrorMessage('reCAPTCHA is still initializing. Please try again in a moment.')
+      return
+    }
 
     if (!executeRecaptcha) {
       setStatus('error')
@@ -222,13 +253,16 @@ export default function Contact() {
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
       scriptProps={{
-        async: false,
-        defer: false,
-        appendTo: 'head',
+        async: true,
+        defer: true,
+        appendTo: 'body',
         nonce: undefined,
         onLoad: () => {
           console.log('reCAPTCHA script loaded');
         },
+        onError: (error) => {
+          console.error('reCAPTCHA error:', error);
+        }
       }}
     >
       <ContactForm />
