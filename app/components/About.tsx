@@ -40,10 +40,10 @@ export default function About() {
                 I'm a software engineer based in New York City, specializing in building exceptional digital experiences. With a strong foundation in full-stack development and a passion for creating innovative solutions, I focus on developing scalable applications that make a difference.
               </p>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                My expertise spans across modern web technologies, including React, Next.js, TypeScript, and cloud platforms. I'm particularly passionate about creating performant, accessible, and user-friendly applications that solve real-world problems.
+                I am knowledgeable in modern AI technologies and techniques, which includes Large Language Models (LLMs) and various AI-driven developer technologies. My expertise in AI allows me to create cutting-edge solutions that leverage the latest advancements in artificial intelligence.
               </p>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                When I'm not coding, I'm constantly exploring new technologies and contributing to the developer community. I believe in continuous learning and sharing knowledge to help others grow in their technical journey.
+                With extensive experience in Technology Product, Program, and Project Management, I bring a comprehensive approach to delivering successful digital solutions. My background enables me to bridge the gap between technical implementation and business objectives, ensuring projects are delivered on time, within scope, and with exceptional quality.
               </p>
             </div>
           </motion.div>
@@ -59,8 +59,10 @@ export default function About() {
                 src="/images/headshot.jpg"
                 alt="Matthew Spelman"
                 fill
+                quality={100}
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="absolute -inset-4 -z-10 bg-black dark:bg-white rounded-2xl opacity-20 blur-2xl" />

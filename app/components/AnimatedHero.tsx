@@ -28,7 +28,7 @@ export default function AnimatedHero() {
           >
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white">
-                Hi, I'm Matthew Spelman
+                Matthew Spelman
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
                 I'm a software engineer based in New York City, specializing in building exceptional digital experiences.

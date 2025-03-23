@@ -17,7 +17,11 @@ export default function AnimatedHeader() {
         transition={{ duration: 0.5 }}
       >
         <Link 
-          href="/" 
+          href="#"
+          onClick={(e) => {
+            e.preventDefault()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
           className="text-2xl font-bold text-black dark:text-white hover:opacity-80 transition-opacity"
         >
           MS
