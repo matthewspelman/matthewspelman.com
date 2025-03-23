@@ -28,7 +28,7 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl font-bold gradient-text mb-6">
+        <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
           Featured Projects
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export default function Projects() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -46,9 +46,9 @@ export default function Projects() {
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover-card"
           >
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-2xl font-bold gradient-text">{project.title}</h3>
+              <h3 className="text-2xl font-bold text-black dark:text-white">{project.title}</h3>
               {project.status === 'coming-soon' && (
-                <span className="px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 dark:text-blue-400 dark:bg-blue-900/30 rounded-full">
+                <span className="px-3 py-1 text-sm font-medium text-black dark:text-white bg-gray-100 dark:bg-gray-700 rounded-full">
                   Coming Soon
                 </span>
               )}
@@ -78,7 +78,7 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                className="inline-flex items-center text-black dark:text-white hover:underline"
               >
                 View Project
                 <svg

@@ -12,11 +12,11 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl font-bold gradient-text mb-6">
+        <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
           Let's Connect
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Have a question or want to work together? I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.
+          Have a question or want to work together? I'd love to hear from you. Send me a message on LinkedIn at my profile below and I'll get back to you as soon as possible.
         </p>
       </motion.div>
 
@@ -26,14 +26,14 @@ export default function Contact() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="max-w-xl mx-auto"
       >
-        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-card">
-          <h3 className="text-2xl font-bold gradient-text mb-4">Quick Links</h3>
+        <div className="bg-black dark:bg-white rounded-2xl p-8 shadow-xl hover-card">
+          <h3 className="text-2xl font-bold text-white dark:text-black mb-4">Quick Links</h3>
           <div className="flex flex-col space-y-4">
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="https://www.linkedin.com/in/matthewspelman/"
-              className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all"
+              className="flex items-center gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all text-white dark:bg-black/10 dark:hover:bg-black/20 dark:text-black"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -46,7 +46,7 @@ export default function Contact() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="https://github.com/matthewspelman"
-              className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all"
+              className="flex items-center gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all text-white dark:bg-black/10 dark:hover:bg-black/20 dark:text-black"
               rel="noopener noreferrer"
               target="_blank"
             >

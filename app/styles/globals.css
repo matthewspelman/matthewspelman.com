@@ -38,10 +38,6 @@
   }
 }
 
-.hero-gradient {
-  @apply bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -69,14 +65,9 @@
   @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
 }
 
-/* Gradient text */
-.gradient-text {
-  @apply bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent;
-}
-
 /* Button styles */
 .btn-primary {
-  @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-violet-600 text-white rounded-lg hover:from-blue-700 hover:to-violet-700 transition-all shadow-lg hover:shadow-xl font-medium;
+  @apply px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:opacity-80 transition-all shadow-lg hover:shadow-xl font-medium;
 }
 
 .btn-secondary {

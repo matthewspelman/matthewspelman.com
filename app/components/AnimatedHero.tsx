@@ -27,7 +27,7 @@ export default function AnimatedHero() {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white">
                 Hi, I'm Matthew Spelman
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
@@ -40,7 +40,7 @@ export default function AnimatedHero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#contact"
-                className="btn-primary"
+                className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:opacity-80 transition-all shadow-lg hover:shadow-xl font-medium"
               >
                 Get in Touch
               </motion.a>
@@ -50,7 +50,7 @@ export default function AnimatedHero() {
                 href="https://github.com/matthewspelman"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl"
               >
                 GitHub
               </motion.a>
@@ -72,7 +72,7 @@ export default function AnimatedHero() {
                 priority
               />
             </div>
-            <div className="absolute -inset-4 -z-10 bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 rounded-2xl opacity-20 blur-2xl" />
+            <div className="absolute -inset-4 -z-10 bg-black dark:bg-white rounded-2xl opacity-20 blur-2xl" />
           </motion.div>
         </div>
       </div>

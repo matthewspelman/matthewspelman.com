@@ -19,7 +19,7 @@ export default function AnimatedHeader() {
       >
         <Link 
           href="/" 
-          className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+          className="text-2xl font-bold text-black dark:text-white hover:opacity-80 transition-opacity"
         >
           MS
         </Link>
@@ -39,10 +39,10 @@ export default function AnimatedHeader() {
           >
             <Link
               href={item.href}
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors relative group"
+              className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors relative group"
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-violet-600 group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black dark:bg-white group-hover:w-full transition-all duration-300" />
             </Link>
           </motion.div>
         ))}
