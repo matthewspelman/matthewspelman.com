@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 async function verifyRecaptcha(token: string) {
   const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
     method: 'POST',
@@ -29,6 +27,9 @@ export async function POST(request: Request) {
       );
     }
 
+    // Initialize Resend only when needed
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const data = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: ['matthewspelman@gmail.com'],
@@ -43,6 +44,7 @@ Message: ${message}
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
+    console.error('Contact form error:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to send email' },
       { status: 500 }
