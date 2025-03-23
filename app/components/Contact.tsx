@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { EnvelopeIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+import { CodeBracketIcon, EnvelopeIcon, LinkedinIcon } from '@heroicons/react/24/outline'
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 function ContactForm() {
@@ -85,13 +85,13 @@ function ContactForm() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:matthewspelman@gmail.com?subject=Pleasure%20to%20meet%20you"
+                href="https://www.linkedin.com/in/matthewspelman/"
                 className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <EnvelopeIcon className="w-6 h-6" />
-                <span>matthewspelman@gmail.com</span>
+                <LinkedinIcon className="w-6 h-6" />
+                <span>LinkedIn Profile</span>
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -102,7 +102,7 @@ function ContactForm() {
                 target="_blank"
               >
                 <CodeBracketIcon className="w-6 h-6" />
-                <span>github.com/matthewspelman</span>
+                <span>GitHub Profile</span>
               </motion.a>
             </div>
           </div>
