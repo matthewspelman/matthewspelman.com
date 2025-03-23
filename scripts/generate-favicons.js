@@ -1,22 +1,29 @@
 const sharp = require('sharp');
-const fs = require('fs');
 const path = require('path');
 
-const sizes = [32, 192, 512, 180]; // 180 is for apple-touch-icon
-const inputFile = path.join(__dirname, '../public/icon.svg');
-const outputDir = path.join(__dirname, '../public');
+const sizes = [16, 32, 48, 64, 128, 256];
+const inputFile = path.join(process.cwd(), 'public', 'icon.svg');
 
 async function generateFavicons() {
-  for (const size of sizes) {
-    const outputFile = path.join(outputDir, size === 180 ? 'apple-touch-icon.png' : `icon${size === 32 ? '' : `-${size}`}.png`);
-    
+  try {
+    for (const size of sizes) {
+      await sharp(inputFile)
+        .resize(size, size)
+        .toFile(path.join(process.cwd(), 'public', `favicon-${size}x${size}.png`));
+    }
+
     await sharp(inputFile)
-      .resize(size, size)
-      .png()
-      .toFile(outputFile);
-    
-    console.log(`Generated ${outputFile}`);
+      .resize(180, 180)
+      .toFile(path.join(process.cwd(), 'public', 'apple-touch-icon.png'));
+
+    await sharp(inputFile)
+      .resize(16, 16)
+      .toFile(path.join(process.cwd(), 'public', 'favicon.ico'));
+
+    console.log('Favicons generated successfully!');
+  } catch (error) {
+    console.error('Error generating favicons:', error);
   }
 }
 
-generateFavicons().catch(console.error); 
+generateFavicons();

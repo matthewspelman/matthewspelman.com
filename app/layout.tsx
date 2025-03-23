@@ -13,12 +13,11 @@ export const metadata: Metadata = {
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
     icon: [
-      { url: '/icons/favicon.ico', sizes: 'any' },
-      { url: '/icons/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/icons/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icons/icon.svg', type: 'image/svg+xml' },
+      { url: '/icons/favicon.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/icons/favicon.png', type: 'image/png' },
     ],
   },
   manifest: '/site.webmanifest',
@@ -46,10 +45,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
-        <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+        <link rel="icon" type="image/png" href="/icons/favicon.png" />
+        <link rel="apple-touch-icon" href="/icons/favicon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white antialiased">
