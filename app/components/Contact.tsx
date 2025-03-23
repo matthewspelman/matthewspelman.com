@@ -257,12 +257,6 @@ export default function Contact() {
         defer: true,
         appendTo: 'body',
         nonce: undefined,
-        onLoad: () => {
-          console.log('reCAPTCHA script loaded');
-        },
-        onError: (error) => {
-          console.error('reCAPTCHA error:', error);
-        }
       }}
     >
       <ContactForm />
