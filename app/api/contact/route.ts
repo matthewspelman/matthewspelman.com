@@ -38,7 +38,7 @@ Name: ${name}
 Email: ${email}
 Message: ${message}
       `,
-      reply_to: email,
+      replyTo: email,
     });
 
     return NextResponse.json({ success: true, data });
