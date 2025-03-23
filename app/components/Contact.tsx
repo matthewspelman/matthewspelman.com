@@ -31,23 +31,12 @@ function ContactForm() {
 
   // Check reCAPTCHA initialization
   useEffect(() => {
-    const checkRecaptcha = () => {
-      if (typeof window !== 'undefined' && window.grecaptcha) {
+    if (typeof window !== 'undefined' && window.grecaptcha) {
+      window.grecaptcha.ready(() => {
         setRecaptchaReady(true);
         console.log('reCAPTCHA is ready');
-      } else {
-        console.log('reCAPTCHA not found in window object');
-      }
-    };
-
-    // Initial check
-    checkRecaptcha();
-
-    // Set up an interval to check periodically
-    const interval = setInterval(checkRecaptcha, 1000);
-
-    // Cleanup
-    return () => clearInterval(interval);
+      });
+    }
   }, []);
 
   // Clear URL parameters on component mount
