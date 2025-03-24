@@ -12,15 +12,9 @@ export const metadata: Metadata = {
   title: 'Matthew Spelman',
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
-    icon: [
-      { url: '/icons/icon.svg', type: 'image/svg+xml' },
-      { url: '/icons/favicon.png', type: 'image/png', sizes: '32x32' },
-      { url: '/icons/favicon.png', type: 'image/png', sizes: '192x192' },
-    ],
-    apple: [
-      { url: '/icons/favicon.png', type: 'image/png', sizes: '180x180' },
-    ],
-    shortcut: '/icons/favicon.png',
+    icon: '/icons/icon.svg',
+    apple: '/icons/icon.svg',
+    shortcut: '/icons/icon.svg',
   },
   manifest: '/site.webmanifest',
   viewport: 'width=device-width, initial-scale=1',
@@ -33,9 +27,9 @@ export const metadata: Metadata = {
     siteName: 'Matthew Spelman',
     images: [
       {
-        url: '/icons/favicon.png',
-        width: 192,
-        height: 192,
+        url: '/icons/icon.svg',
+        width: 32,
+        height: 32,
         alt: 'Matthew Spelman',
       },
     ],
@@ -44,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Matthew Spelman',
     description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
-    images: ['/icons/favicon.png'],
+    images: ['/icons/icon.svg'],
   },
 }
 
@@ -57,10 +51,8 @@ export default function RootLayout({
     <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icons/favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon.png" />
-        <link rel="shortcut icon" href="/icons/favicon.png" />
+        <link rel="apple-touch-icon" href="/icons/icon.svg" />
+        <link rel="shortcut icon" href="/icons/icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white antialiased">
