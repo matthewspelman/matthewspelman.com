@@ -12,8 +12,15 @@ export const metadata: Metadata = {
   title: 'Matthew Spelman',
   description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
   icons: {
-    icon: '/icons/icon.svg',
-    apple: '/icons/icon.svg',
+    icon: [
+      { url: '/icons/icon.svg', type: 'image/svg+xml' },
+      { url: '/icons/icon.svg', type: 'image/svg+xml', sizes: '32x32' },
+      { url: '/icons/icon.svg', type: 'image/svg+xml', sizes: '192x192' },
+      { url: '/icons/icon.svg', type: 'image/svg+xml', sizes: '512x512' }
+    ],
+    apple: [
+      { url: '/icons/icon.svg', type: 'image/svg+xml', sizes: '180x180' }
+    ],
     shortcut: '/icons/icon.svg',
   },
   manifest: '/site.webmanifest',
@@ -28,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/icons/icon.svg',
-        width: 32,
-        height: 32,
+        width: 512,
+        height: 512,
         alt: 'Matthew Spelman',
       },
     ],
@@ -51,7 +58,10 @@ export default function RootLayout({
     <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
-        <link rel="apple-touch-icon" href="/icons/icon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/icons/icon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="192x192" href="/icons/icon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="512x512" href="/icons/icon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon.svg" />
         <link rel="shortcut icon" href="/icons/icon.svg" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
