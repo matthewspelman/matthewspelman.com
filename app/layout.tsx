@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'Matthew Spelman',
+    url: 'https://matthewspelman.com',
     images: [
       {
         url: '/icons/icon.svg',
@@ -39,13 +40,39 @@ export const metadata: Metadata = {
         height: 512,
         alt: 'Matthew Spelman',
       },
+      {
+        url: '/icons/icon.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Matthew Spelman',
+      }
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Matthew Spelman',
     description: 'Personal website of Matthew Spelman - Software Engineer and Builder',
-    images: ['/icons/icon.svg'],
+    creator: '@matthewspelman',
+    images: [
+      {
+        url: '/icons/icon.svg',
+        width: 512,
+        height: 512,
+        alt: 'Matthew Spelman',
+      },
+      {
+        url: '/icons/icon.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Matthew Spelman',
+      }
+    ],
+  },
+  other: {
+    'og:site_name': 'Matthew Spelman',
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:type': 'image/svg+xml',
   },
 }
 
