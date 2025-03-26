@@ -70,6 +70,7 @@ export default function AnimatedHero() {
                 fill
                 className="object-cover"
                 priority
+                quality={100}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 384px, 320px"
               />
             </div>
