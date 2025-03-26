@@ -61,7 +61,7 @@ export default function AnimatedHero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative aspect-square max-w-md mx-auto"
+            className="relative aspect-square max-w-sm lg:max-w-xs mx-auto"
           >
             <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl hover-card">
               <Image
@@ -70,6 +70,7 @@ export default function AnimatedHero() {
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 384px, 320px"
               />
             </div>
             <div className="absolute -inset-4 -z-10 bg-black dark:bg-white rounded-2xl opacity-20 blur-2xl" />
