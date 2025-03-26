@@ -31,7 +31,7 @@ export default function AnimatedHero() {
                 Matthew Spelman
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Software Engineer & Technology Leader specializing in AI and full-stack development, delivering innovative solutions that bridge technical excellence with business objectives.
+                Software Engineer & Technology Leader with expertise in quantitative finance and AI, delivering innovative solutions that bridge technical excellence with business objectives.
               </p>
             </div>
             
