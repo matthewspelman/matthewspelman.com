@@ -37,7 +37,7 @@ export default function About() {
             
             <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                Combining deep expertise in technology management, full-stack software engineering, and advanced AI including Large Language Models, I deliver innovative digital solutions that bridge technical excellence with strategic business goals.
+                With deep expertise in technology management, full-stack software engineering, and advanced AI including Large Language Models, I deliver innovative digital solutions that bridge technical excellence with strategic business goals.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                 By leveraging the latest advancements in AI and software engineering, I help businesses implement transformative solutions that are delivered efficiently, on scope, and with outstanding quality.
