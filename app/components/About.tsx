@@ -40,7 +40,7 @@ export default function About() {
                 With extensive experience in technology product, program, and project management, as well as software engineering, I deliver innovative digital solutions that seamlessly connect technical execution with strategic business objectives. Based in New York City, my expertise encompasses full-stack development, enabling me to build scalable, impactful applications designed to enhance user experiences and drive meaningful results.
               </p>
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                My proficiency in modern artificial intelligence technologies—including Large Language Models (LLMs) and AI-driven development frameworks—positions me uniquely to create cutting-edge digital experiences. By leveraging the latest advancements in AI, I help businesses implement transformative solutions that are delivered efficiently, on scope, and with outstanding quality.
+                My proficiency in modern artificial intelligence technologies including Large Language Models (LLMs) and AI-driven development frameworks positions me uniquely to create cutting-edge digital experiences. By leveraging the latest advancements in AI, I help businesses implement transformative solutions that are delivered efficiently, on scope, and with outstanding quality.
               </p>
             </div>
           </motion.div>
