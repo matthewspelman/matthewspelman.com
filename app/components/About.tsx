@@ -49,7 +49,7 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative w-full h-[700px]"
+            className="relative w-full aspect-[3/4] max-h-[700px]"
           >
             <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card">
               <Image
@@ -58,6 +58,7 @@ export default function About() {
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 700px"
               />
             </div>
             <div className="absolute -inset-2 -z-10 bg-black dark:bg-white rounded-lg opacity-10 blur-xl" />
