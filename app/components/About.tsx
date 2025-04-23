@@ -20,12 +20,12 @@ export default function About() {
 
       <div className="w-full max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
-          {/* Image Section - Moved to top on mobile */}
+          {/* Image Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative w-full aspect-[3/4] max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto order-first lg:order-last"
+            className="relative w-full aspect-[3/4] max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto"
           >
             <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card">
               <Image
@@ -39,29 +39,6 @@ export default function About() {
               />
             </div>
             <div className="absolute -inset-2 -z-10 bg-black dark:bg-white rounded-lg opacity-10 blur-xl" />
-          </motion.div>
-
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-8 lg:space-y-12"
-          >
-            <div className="space-y-2">
-              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-black dark:text-white">
-                About
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
-                Matthew Spelman
-              </h2>
-            </div>
-            
-            <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
-              <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                With deep expertise in quantitative finance, technology management, and full-stack software engineering, I bring a unique perspective to delivering innovative digital solutions.
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>
