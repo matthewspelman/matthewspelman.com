@@ -59,10 +59,7 @@ export default function About() {
             
             <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                With deep expertise in quantitative finance, technology management, and full-stack software engineering, I bring a unique perspective to delivering innovative digital solutions. My background in quantitative hedge funds and advanced AI including Large Language Models enables me to bridge technical excellence with strategic business goals.
-              </p>
-              <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                By leveraging the latest advancements in AI and software engineering, combined with my experience in financial technology, I help businesses implement transformative solutions that are delivered efficiently, on scope, and with outstanding quality.
+                With deep expertise in quantitative finance, technology management, and full-stack software engineering, I bring a unique perspective to delivering innovative digital solutions.
               </p>
             </div>
           </motion.div>
