@@ -16,7 +16,7 @@ export default function Contact() {
           Let's Connect
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Have a question or want to work together? I'd love to hear from you. Send me a message on LinkedIn at my profile below and I'll get back to you as soon as possible.
+          Send me a message on LinkedIn at my profile below and I'll get back to you as soon as possible.
         </p>
       </motion.div>
 
