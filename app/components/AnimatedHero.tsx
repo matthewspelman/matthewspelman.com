@@ -7,7 +7,7 @@ export default function AnimatedHero() {
   return (
     <div className="relative w-full">
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10 opacity-10 dark:opacity-5 w-full">
+      <div className="absolute inset-0 -z-10 opacity-5 dark:opacity-[0.02] w-full">
         <Image
           src="/images/hero-bg.jpeg"
           alt="Background"
@@ -26,6 +26,12 @@ export default function AnimatedHero() {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white">
+                Matthew Spelman
+              </h1>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.a
                 whileHover={{ scale: 1.05 }}
