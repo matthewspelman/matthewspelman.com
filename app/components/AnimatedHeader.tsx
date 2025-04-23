@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 const navItems = [
-  { href: '#contact', label: 'About' },
+  { href: '#', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -42,6 +42,14 @@ export default function AnimatedHeader() {
           >
             <Link
               href={item.href}
+              onClick={(e) => {
+                e.preventDefault()
+                if (item.href === '#') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                } else {
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
               className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors relative group"
             >
               {item.label}
