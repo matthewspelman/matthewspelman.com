@@ -19,7 +19,7 @@ export default function About() {
       </div>
 
       <div className="w-full max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-center py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
           {/* Image Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
