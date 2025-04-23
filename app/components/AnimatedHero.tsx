@@ -19,12 +19,12 @@ export default function AnimatedHero() {
       </div>
 
       <div className="w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 py-24 px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-8"
+            className="space-y-8 text-center lg:text-left"
           >
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white">
@@ -32,7 +32,7 @@ export default function AnimatedHero() {
               </h1>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
