@@ -1,6 +1,5 @@
 import AnimatedHeader from './components/AnimatedHeader'
 import AnimatedHero from './components/AnimatedHero'
-import About from './components/About'
 import Contact from './components/Contact'
 
 export default function Home() {
@@ -17,11 +16,7 @@ export default function Home() {
           <AnimatedHero />
         </section>
 
-        <section id="about" className="min-h-screen flex items-center justify-center">
-          <About />
-        </section>
-
-        <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-800/50">
+        <section id="contact" className="py-16 bg-gray-50 dark:bg-gray-800/50">
           <div className="container">
             <Contact />
           </div>
