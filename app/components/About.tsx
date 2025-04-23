@@ -20,14 +20,13 @@ export default function About() {
 
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex items-center justify-center py-16 lg:py-32 px-4 sm:px-6 lg:px-8">
-          {/* Image Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative w-full aspect-[3/4] max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto"
+            className="relative aspect-square max-w-sm lg:max-w-xs mx-auto"
           >
-            <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card">
+            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl hover-card">
               <Image
                 src="/images/headshot.jpg"
                 alt="Matthew Spelman"
@@ -35,10 +34,10 @@ export default function About() {
                 className="object-cover"
                 priority
                 quality={100}
-                sizes="(max-width: 640px) 280px, (max-width: 768px) 384px, 448px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 384px, 320px"
               />
             </div>
-            <div className="absolute -inset-2 -z-10 bg-black dark:bg-white rounded-lg opacity-10 blur-xl" />
+            <div className="absolute -inset-4 -z-10 bg-black dark:bg-white rounded-2xl opacity-20 blur-2xl" />
           </motion.div>
         </div>
       </div>
