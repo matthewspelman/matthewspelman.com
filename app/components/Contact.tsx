@@ -58,9 +58,9 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative aspect-square max-w-sm lg:max-w-xs mx-auto"
+          className="relative w-[200px] h-[266px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px] mx-auto"
         >
-          <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl hover-card">
+          <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card">
             <Image
               src="/images/headshot.jpg"
               alt="Matthew Spelman"
@@ -68,10 +68,10 @@ export default function Contact() {
               className="object-cover"
               priority
               quality={100}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 384px, 320px"
+              sizes="(max-width: 640px) 200px, (max-width: 768px) 250px, 300px"
             />
           </div>
-          <div className="absolute -inset-4 -z-10 bg-black dark:bg-white rounded-2xl opacity-20 blur-2xl" />
+          <div className="absolute -inset-2 -z-10 bg-black dark:bg-white rounded-lg opacity-10 blur-xl" />
         </motion.div>
       </div>
     </div>

@@ -5,17 +5,20 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full min-h-screen">
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10 opacity-[0.03] dark:opacity-[0.01] w-full">
-        <Image
-          src="/images/bridge.jpg"
-          alt="Brooklyn Bridge"
-          fill
-          priority
-          className="object-cover w-full brightness-50"
-          sizes="100vw"
-        />
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 opacity-[0.08] dark:opacity-[0.03]">
+          <Image
+            src="/images/startup-photos_wireframe2_1280x854.jpg"
+            alt="Background"
+            fill
+            priority
+            className="object-cover w-full h-full brightness-[0.4] contrast-110 scale-150"
+            sizes="100vw"
+            style={{ objectPosition: 'center 30%' }}
+          />
+        </div>
       </div>
 
       <div className="w-full max-w-6xl mx-auto">
