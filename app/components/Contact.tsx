@@ -12,7 +12,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center lg:text-left space-y-8 w-full lg:w-1/2 lg:pr-6"
+          className="text-center lg:text-left space-y-8 w-full lg:w-1/2 lg:pr-12"
         >
           <div>
             <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
@@ -58,7 +58,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-6 flex justify-center"
+          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
         >
           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
             <Image
