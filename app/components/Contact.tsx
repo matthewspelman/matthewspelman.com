@@ -58,7 +58,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
+          className="relative w-[250px] h-[400px] sm:w-[300px] sm:h-[450px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
         >
           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
             <Image
