@@ -12,7 +12,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center lg:text-left space-y-8 w-full lg:w-1/2 lg:pr-8"
+          className="text-center lg:text-left space-y-8 w-full lg:w-1/2 lg:pr-6"
         >
           <div>
             <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
@@ -23,7 +23,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="bg-black dark:bg-white rounded-2xl p-8 shadow-xl hover-card h-full">
+          <div className="bg-black dark:bg-white rounded-2xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-white dark:text-black mb-4">Quick Links</h3>
             <div className="flex flex-col space-y-4">
               <motion.a
@@ -58,9 +58,9 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-8 flex justify-center"
+          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-6 flex justify-center"
         >
-          <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card transform hover:scale-105 transition-transform duration-300">
+          <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/headshot.jpg"
               alt="Matthew Spelman"
