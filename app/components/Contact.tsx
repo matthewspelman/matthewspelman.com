@@ -7,15 +7,15 @@ import Image from 'next/image'
 export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center lg:text-left space-y-8 w-full lg:w-1/2 lg:pr-12"
+          className="text-center lg:text-left space-y-6 w-full lg:w-1/2 lg:pr-12"
         >
           <div>
-            <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
+            <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
               Let's Connect
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
@@ -23,7 +23,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="bg-black dark:bg-white rounded-2xl p-8 shadow-xl">
+          <div className="bg-black dark:bg-white rounded-2xl p-6 sm:p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-white dark:text-black mb-4">Quick Links</h3>
             <div className="flex flex-col space-y-4">
               <motion.a
@@ -58,7 +58,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[250px] h-[400px] sm:w-[300px] sm:h-[450px] mx-auto mt-8 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
+          className="relative w-[180px] h-[240px] sm:w-[250px] sm:h-[333px] lg:w-[280px] lg:h-[373px] mx-auto mt-4 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
         >
           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -68,7 +68,7 @@ export default function Contact() {
               className="object-cover"
               priority
               quality={100}
-              sizes="(max-width: 640px) 250px, (max-width: 768px) 300px, 400px"
+              sizes="(max-width: 640px) 180px, (max-width: 768px) 250px, 280px"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkLzYvLy0vLzYvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLz/2wBDAR0dHR4eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eLz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
