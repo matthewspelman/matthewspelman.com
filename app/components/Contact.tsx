@@ -7,12 +7,12 @@ import Image from 'next/image'
 export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex flex-row items-center justify-center gap-4 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-left space-y-6 w-1/2 pr-4 lg:pr-12"
+          className="text-center lg:text-left space-y-6 w-full lg:w-1/2 lg:pr-12"
         >
           <div>
             <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
@@ -58,7 +58,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[180px] h-[240px] sm:w-[250px] sm:h-[333px] lg:w-[280px] lg:h-[373px] w-1/2 pl-4 lg:pl-12 flex justify-center"
+          className="relative w-[180px] h-[240px] sm:w-[250px] sm:h-[333px] lg:w-[280px] lg:h-[373px] mx-auto mt-4 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center"
         >
           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg">
             <Image
