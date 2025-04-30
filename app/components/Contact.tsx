@@ -7,12 +7,12 @@ import Image from 'next/image'
 export default function Contact() {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 py-16 px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center lg:text-left space-y-8"
+          className="text-center lg:text-left space-y-8 w-full lg:w-1/2"
         >
           <div>
             <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
@@ -58,7 +58,7 @@ export default function Contact() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[200px] h-[266px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px] mx-auto mt-8 lg:mt-0"
+          className="relative w-[250px] h-[333px] sm:w-[300px] sm:h-[400px] mx-auto mt-8 lg:mt-0 lg:w-1/2 flex justify-center"
         >
           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-lg hover-card transform hover:scale-105 transition-transform duration-300">
             <Image
@@ -68,7 +68,7 @@ export default function Contact() {
               className="object-cover"
               priority
               quality={100}
-              sizes="(max-width: 640px) 200px, (max-width: 768px) 250px, 300px"
+              sizes="(max-width: 640px) 250px, (max-width: 768px) 300px, 400px"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkLzYvLy0vLzYvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLz/2wBDAR0dHR4eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eHR0eLz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
