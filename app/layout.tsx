@@ -80,11 +80,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable}`}>
-      <head>
-        <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
-        <link rel="shortcut icon" href="/icons/icon.svg" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
       <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white antialiased">
         {children}
       </body>
